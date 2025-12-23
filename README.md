@@ -199,4 +199,3 @@ kafka-topics.bat --create \
 
 
 
-erver-start.bat config/zookeeper.properties
