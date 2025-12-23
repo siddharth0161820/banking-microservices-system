@@ -83,10 +83,62 @@ Manages **User CRUD operations** with DTO validation and global exception handli
 📸 **User Service Screenshots**
 
 ![Create User](./screenshots/01_user_create_api.png)
+```json
+Input
+{
+    "firstName": "Time",
+    "email": "patience@gmail.com",
+    "status": "Actice"
+}
+Output
+{
+    "userId": 1,
+    "firstName": "Time",
+    "email": "patience@gmail.com",
+    "status": "Actice"
+}
+```
 ![Get User](./screenshots/02_user_get_api.png)
+```json
+{
+    "userId": 1,
+    "firstName": "Time",
+    "email": "patience@gmail.com",
+    "status": "Actice"
+}
+```
 ![Update User](./screenshots/03_user_update_api.png)
+```json
+Input
+{
+    "userId": 2,
+    "firstName": "Time",
+    "email": "patience@gmail.com",
+    "status": "Actice"
+}
+Output
+{
+   "userId": 2,
+    "firstName": "TimeChanges",
+    "email": "patiencee@gmail.com",
+    "status": "Actice"
+}
+```
 ![Validation Errors](./screenshots/04_user_validation_errors.png)
-
+```json
+Input
+{
+   "firstName": "",
+    "email": "",
+    "status": ""
+}
+Output
+{
+  "firstName": "must not be empty",
+  "email": "must not be empty"
+   "status": "status for each user need to be updated"
+}
+```
 ### Highlights
 - DTO-based request/response  
 - Validation using annotations  
@@ -133,8 +185,32 @@ Handles transaction creation and retrieval.
 📸 **Transaction APIs**
 
 ![Create Transaction](./screenshots/08_transaction_create_api.png)
+```json
+Input
+{
+     "accountId": 1,
+     "amount": 5200.00,
+     "transactionType": "CreditCardModeOfPayment"
+}
+Output
+{
+        "transactionId": 1,
+        "accountId": 1,
+        "amount": 5200.00,
+        "transactionType": "CreditCardModeOfPayment",
+        "timestamp": "2025-10-19T16:26:18.541016"
+    }
+```
 ![Transaction Response](./screenshots/09_transaction_response_api.png)
-
+```json
+{
+    "transactionId": 1,
+    "accountId": 1,
+    "amount": 5200.00,
+    "transactionType": "CreditCardModeOfPayment",
+    "timestamp": "2025-10-19T16:26:18.541016"
+}
+```
 ---
 
 ## ⚙️ Kafka & Zookeeper Setup (Local)
@@ -156,7 +232,7 @@ zookeeper-server-start.bat config/zookeeper.properties
 
 ---
 
-### 1️⃣ Start Kafka Broker
+### 2️⃣ Start Kafka Broker
 
 ```bash
 kafka-server-start.bat config/server.properties
@@ -173,7 +249,7 @@ kafka-server-start.bat config/server.properties
 
 ---
 
-### 1️⃣ Create Kafka Topic
+### Create Kafka Topic
 
 ```bash
 kafka-topics.bat --create \
