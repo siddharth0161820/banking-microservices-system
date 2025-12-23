@@ -88,14 +88,14 @@ Input
 {
     "firstName": "Time",
     "email": "patience@gmail.com",
-    "status": "Actice"
+    "status": "Active"
 }
 Output
 {
     "userId": 1,
     "firstName": "Time",
     "email": "patience@gmail.com",
-    "status": "Actice"
+    "status": "Active"
 }
 ```
 ![Get User](./screenshots/02_user_get_api.png)
@@ -188,18 +188,18 @@ Handles transaction creation and retrieval.
 ```json
 Input
 {
-     "accountId": 1,
-     "amount": 5200.00,
-     "transactionType": "CreditCardModeOfPayment"
+    "accountId": 1,
+    "amount": 5200.00,
+    "transactionType": "CreditCardModeOfPayment"
 }
 Output
 {
-        "transactionId": 1,
-        "accountId": 1,
-        "amount": 5200.00,
-        "transactionType": "CreditCardModeOfPayment",
-        "timestamp": "2025-10-19T16:26:18.541016"
-    }
+    "transactionId": 1,
+    "accountId": 1,
+    "amount": 5200.00,
+    "transactionType": "CreditCardModeOfPayment",
+    "timestamp": "2025-10-19T16:26:18.541016"
+}
 ```
 ![Transaction Response](./screenshots/09_transaction_response_api.png)
 ```json
