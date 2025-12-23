@@ -1,7 +1,7 @@
 # 🏦 Banking Microservices System – Spring Boot & Kafka
 
 A real-world **Spring Boot Microservices backend system** demonstrating industry-level implementation of **REST APIs, Apache Kafka (event-driven communication), Eureka Service Discovery**, DTO validation, and clean layered architecture.  
-Built with strong focus on **backend fundamentals, system design, and production-ready patterns**, suitable for **0–3 Years Java Backend Developer roles**.
+Built with strong focus on **backend fundamentals, system design, and production-ready patterns**, suitable for Java Backend Developer roles**.
 
 ![Java](https://img.shields.io/badge/Java-21-ED8B00?style=for-the-badge)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=for-the-badge)
