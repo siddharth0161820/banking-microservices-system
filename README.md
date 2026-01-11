@@ -54,7 +54,7 @@ Built with strong focus on **backend fundamentals, system design, and production
 
 📸 **Kafka-Based System Architecture**
 
-![Kafka Architecture](./screenshots/13_kafka_architecture.png)
+![Kafka Architecture](./screenshots/kafka_architecture.png)
 
 ---
 
