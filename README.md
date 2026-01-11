@@ -36,7 +36,7 @@ Built with strong focus on **backend fundamentals, system design, and production
 📸 **Architecture Screenshots**
 
 ![Monolithic Architecture](./screenshots/10_monolithic_architecture.png)
-![Microservices Architecture](./screenshots/11_microservices_architecture.png)
+![Microservices Architecture](./screenshots/02_microservices_architecture.png)
 
 ---
 
